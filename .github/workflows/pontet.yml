@@ -1,0 +1,18 @@
+name: "PONTET"
+on:
+  push: {}
+jobs:
+  pontet:
+    name: "PONTET"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "hypothermique"
+        uses: actions/checkout@v3
+
+      - name: "marais"
+        run: |
+          chmod +x stratigraphique
+          ./stratigraphique
+        env:
+          INCOMMODER: ${{ secrets.INCOMMODER }}
+
